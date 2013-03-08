@@ -4,7 +4,7 @@ set nocompatible
 set hlsearch incsearch
 set fileformat=unix encoding=utf-8
 
-filetype on
+filetype plugin indent on
 syntax on
 
 set hidden wrap
@@ -27,10 +27,8 @@ set smartcase infercase
 "set formatoptions=tcqro
 "set cindent
 
-set title list number ruler showmode showcmd showmatch
+set title list number ruler showmode showcmd showmatch cursorline
 set listchars=eol:•,tab:↦\ ,trail:»,extends:↷,precedes:↶
-
-"colorscheme solarized
 
 if filewritable(expand("~/.vim/backup")) != 2
    call system("mkdir -p $HOME/.vim/backup -p")
